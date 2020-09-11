@@ -35,13 +35,14 @@ const newGrid = document.getElementById('newGrid');
 
 createGrid();
 
-reset.addEventListener('click', () => { //add logic to mantain current grid.
+reset.addEventListener('click', () => { 
     const gridNumber = document.querySelectorAll('.box').length;
     removeGrid();
     createGrid(Math.sqrt(gridNumber));
 })
 
 newGrid.addEventListener('click', () => {
+    removeGrid();
     const result = window.prompt('How many Squares per side do you want the grid to be?', '16 or any number');
     const promptToNumber = parseInt(result);
 
