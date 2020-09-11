@@ -9,7 +9,7 @@ function createDiv(squaresPerSide = 16) {
 
 function createSquares (squaresPerSide = 16) {
     const box = document.querySelectorAll('.box');
-    const width = (96 / squaresPerSide);
+    const width = (98 / squaresPerSide).toFixed(2);
     const height = (80 / squaresPerSide);
     for (let i = 0; i < box.length; i++) {
         box[i].style.width = `${width}vw`;
