@@ -9,8 +9,8 @@ function createDiv(squaresPerSide = 16) {
 
 function createSquares (squaresPerSide = 16) {
     const box = document.querySelectorAll('.box');
-    const width = Math.floor(96 / squaresPerSide);
-    const height = Math.floor(80 / squaresPerSide);
+    const width = (96 / squaresPerSide);
+    const height = (80 / squaresPerSide);
     for (let i = 0; i < box.length; i++) {
         box[i].style.width = `${width}vw`;
         box[i].style.height = `${height}vh`;
@@ -42,7 +42,6 @@ function getColors (element) { //Returns an array with the number of colors in r
     return colorNumbers ;
 }
 
-//background-color: rgb(160, 200, 250);
 
 function changeColor (element) {
     const red = randomNumber();
